@@ -1,6 +1,5 @@
 import express from 'express'
 import mongoose from "mongoose";
-import Post from "./Post.js";
 import router from "./router.js";
 import fileUpload from 'express-fileupload';
 
@@ -27,3 +26,4 @@ async function startApp(){
 startApp()
 // console.log('SERVER WORKING')
 //v3
+//test тест
