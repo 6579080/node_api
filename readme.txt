@@ -11,5 +11,5 @@ npm i -D nodemon
 //
 npm i mongoose
 
-
-//c
+//для загрузки модулей из package.json
+npm i
