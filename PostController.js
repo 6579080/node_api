@@ -45,7 +45,7 @@ class PostController{
                 res.status(400).json({message: 'id not specified'})
             }
             const updatedPost = await Post.findByIdAndUpdate(post._id, post, {new: true})
-
+            return res.json(updatedPost);
         }catch (e) {
             res.status(500).json(e)
         }
@@ -53,6 +53,12 @@ class PostController{
     }
     async delete(req, res){
         try {
+            const {id} = req.params
+            if(!id) {
+                res.status(400).json({message: 'id not specified'})
+            }
+            const post = await Post.findByIdAndDelete(id);
+            return res.json(post)
 
         }catch (e) {
             res.status(500).json(e)
