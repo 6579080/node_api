@@ -13,3 +13,6 @@ npm i mongoose
 
 //для загрузки модулей из package.json (востановление)
 npm i
+
+//для запуска
+npm run dev
