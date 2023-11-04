@@ -1,6 +1,4 @@
-import Post from "./Post.js";
 import PostService from "./PostService.js";
-import fileUpload from "express-fileupload";
 
 class PostController {
     async create(req, res) {
